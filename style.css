@@ -1,0 +1,360 @@
+   *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   body{
+       position: relative;
+       background:#eee;
+   }
+  .header{
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 50px;
+       background: #023312;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;   
+   }
+  .header .logo img{
+       height: 30px;
+       width: 100%;
+      
+   }
+  .header a{
+       text-decoration: none;
+       color: #ccc;
+   }
+   .header li{
+       list-style: none;
+       border-radius: 5px;
+       color: #ccc;
+       padding: 5px;
+       margin: 2px;
+       background: rgb(55, 56, 55);
+       border: 1px solid #023312;
+       box-shadow: 2px 2px 2px rgba(0,1,0,0.5);
+      
+   }
+   
+   .header li:hover{
+      background: green;
+      opacity: 0.7;
+      cursor: pointer;
+   }
+    li.green{
+       background: green;
+   }
+   .nav-bar ul,.sub-header ul{
+         display: flex;
+         font-size: 18px;
+         justify-content: space-around;
+   }
+   .sub-header{
+       position: fixed;
+       display: flex;
+       top: 50px;
+       left: 0;
+       width: 100%;
+       background: #eee;
+       justify-content: space-between;
+       flex-direction: row;
+       height: 60px;
+   }
+   
+   .sub-header li, .sub-header a{
+       text-decoration: none;
+       list-style: none;
+       margin-bottom: 2px;
+       padding: 5px;
+       color: black;
+       margin-top: 30px;
+   }
+
+   .sub-header img{
+       height: 50px;
+       width: 100px;
+       margin: 10px 0 0 50px;
+       background-color: #eee;
+       background-blend-mode:screen ;
+   }
+   .sab-log{
+       display: flex;
+   }
+   .sab-log p{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 20px;
+       margin-top:30px ;
+   }
+   .sab-log p::first-letter{
+       font-size: 30px;
+   }
+
+
+        /*tabs*/
+
+   .bars-tab{
+    position: fixed;
+    top: 40px;
+    margin: 10px 0 0 10px;
+    font-size: 30px;
+    color: rgb(81, 102, 75);
+    opacity: 0.7; 
+    
+    padding: 8px;
+    border-radius: 7px;
+    z-index: 1;
+}
+.bars-tab:hover{
+    color: rgb(67, 238, 10);
+    
+}
+
+/* close tab*/
+
+.close-tab{
+    position: fixed;
+    width: 340px;
+    background: rgb(40, 192, 154);
+    border-bottom-right-radius: 8px;
+    display: none;
+    z-index: 2;
+    top: 50px;
+}
+
+.close-tab  i.fa-close{
+    margin: 10px 0 0 10px;
+    font-size: 30px;
+    color: rgb(42, 109, 22);
+   z-index: 3;
+}
+.fa-close:hover{
+color: antiquewhite;
+
+}
+
+.close-tab p{
+    font-size: 30px;
+    padding: 0 0 5px 0;
+    text-align: center;
+    margin: -30px 0 0 0;
+}
+
+.close-tab form input[type="text"]{
+  width: 90%;
+  padding: 2px;
+  margin: 10px -20px 0 10px;
+  border-radius: 5px;
+}
+.close-tab .h-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  .h-button-1 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+}
+.h-button-1 button{
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    border:1px solid rgb(63, 201, 21);
+    border-radius: 6px;
+    box-shadow: 4px 0 9px rgb(55, 85, 46);
+    font-size: 18px;
+}
+.h-button-1 button:first-child{
+    background: rgb(55, 85, 46);
+    color: #ccc;
+}
+.h-button-1 button:last-child{
+    background: rgb(125, 134, 122);
+    color: #ccc;
+}
+.h-button-2 li{
+    list-style: none;
+    font-size: 16px;
+}
+.h-button-2 li::before{
+    content: "\25AA  ";
+    font-size: 30px;
+    margin-left: -2em;
+    width: 2em;
+}
+.h-button-2 li:first-child:before{
+   color:red;
+}
+.h-button-2 li:before{
+   color:green;
+}
+.h-button-2 li:last-child:before{
+   color:orange;
+}
+.a a.last-a{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    left: 50%;
+    justify-content: center;
+    color: black;
+    margin: 10px;
+    font-size: 18px;
+}
+/*  body*/
+.wrapper{
+   margin: 110px 0 0 20px;
+  
+}
+#form-div{
+    display: flex;
+    margin:50px 0 50px 10px ;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#para p{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 30px 0 20px 20px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 0 20px 0;
+    align-items: center;
+}
+
+input[type=email]{
+    padding: 5px 10px ;
+    margin: 0 0 10px;
+    width: 300px;
+}
+
+#form button{
+    width: auto;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 4px;
+    border-radius: 5px;
+    align-items: center;
+    box-shadow:2px 2px 2px rgb(63, 59, 59);
+    background: orange;
+}
+
+/*description*/
+
+.description{
+    margin: 10px 30px 20px 0;
+
+}
+.both{
+    display: flex;
+    padding: 20px;
+}
+
+.bold{
+font-size: 30px;
+}
+p{
+    font-size: 20px;
+    font-family: monospace;
+    
+}
+.both i{
+    font-size: 50px;
+    padding: 30px 40px 30px 0px;
+    color: orange;
+    align-items: center;
+    }
+
+    #video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 400px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .product{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        
+    }
+    .product-list{
+        width: 350px;
+        border: 1px solid #000;
+        text-align: center;
+        margin: 10px 0 20px 0;
+    }
+    .product-list p.big{
+        font-size: 25px;
+        text-transform: uppercase;
+        background: #ccc;
+        padding: 8px;
+        margin-bottom: 20px;
+    }
+    .product-list span{
+        font-weight: 700;
+        font-size: 25px;
+        padding:40px 0 30px 0;
+        margin: 20px 20px;
+    }
+    .product-list pre{
+        font-size: 18px;
+        padding: 5px;
+
+    }
+    .product-list pre:first-child{
+        margin-top: 20px;
+    }
+    .product-list button{
+        text-transform: uppercase;
+        padding: 10px;
+        margin: 8px;
+        font-size: 20px;
+        background: orange;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px rbg(0,0,0);
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        background: #ccc;
+        margin: 20px 0 0 0;
+        padding: 20px;
+        justify-content: flex-end;
+    }
+    .footer li{
+        list-style: none;
+        padding: 5px;
+    }
+    .footer a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+    .footer ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer span{
+        display: flex;
+        justify-content: flex-end;
+        font-family: monospace;
+        font-size: 16px;
+    }
